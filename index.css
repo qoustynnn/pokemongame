@@ -1,0 +1,106 @@
+*{
+    font-family: 'Press Start 2P', system-ui;
+}
+body {
+    background-color: rgb(73, 73, 73);
+}
+h1 {
+    margin: 0;
+    font-size: 16px;
+}
+.white-flash {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:0 ;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+.parent {
+    display: inline-block;
+    position: relative;
+}
+
+.rectangle {
+    background-color: white;
+    height: 140px;
+    position: absolute;  
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    border-top: 4px black solid;
+    display: flex;
+}
+
+.actions {
+    width: 66.66%;
+}
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.33%;
+    border-left: 4px black solid;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+button {
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #ccc;
+}
+
+.health-bar-section-1{
+    top: 50px;
+    left: 50px;
+}
+.health-bar-section-2{
+    right: 50px;
+    top: 330px;
+}
+.health-bars-section{
+    background-color: white;
+    width: 250px;
+    border: 3px solid black;
+    position: absolute;
+
+    padding: 12px;
+}
+.health-bar-container {
+    position: relative;
+    margin-bottom: 5px;
+}
+.gray-bar {
+    height: 5px;
+    background-color: #ccc;
+    margin-top: 10px;
+}
+.health-bar {
+    height: 5px;
+    background-color: #54b847;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.dialogue {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 12px;
+    display: none;
+    background-color: white;
+    cursor: pointer;
+}
